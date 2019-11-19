@@ -14,6 +14,11 @@
 		D1F0685D2384521100FDC689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F0685C2384521100FDC689 /* Assets.xcassets */; };
 		D1F068602384521100FDC689 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F0685F2384521100FDC689 /* Preview Assets.xcassets */; };
 		D1F068632384521200FDC689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F068612384521200FDC689 /* LaunchScreen.storyboard */; };
+		D1F0686B238452B000FDC689 /* ProgramsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F0686A238452B000FDC689 /* ProgramsView.swift */; };
+		D1F0686D238455CC00FDC689 /* ProgramRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F0686C238455CC00FDC689 /* ProgramRow.swift */; };
+		D1F0686F2384603600FDC689 /* ProgramDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F0686E2384603600FDC689 /* ProgramDetailsView.swift */; };
+		D1F068712384646500FDC689 /* ProgramControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F068702384646500FDC689 /* ProgramControlsView.swift */; };
+		D1F068732384651500FDC689 /* ProgramDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F068722384651500FDC689 /* ProgramDotView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		D1F0685F2384521100FDC689 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1F068622384521200FDC689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1F068642384521200FDC689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F0686A238452B000FDC689 /* ProgramsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsView.swift; sourceTree = "<group>"; };
+		D1F0686C238455CC00FDC689 /* ProgramRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramRow.swift; sourceTree = "<group>"; };
+		D1F0686E2384603600FDC689 /* ProgramDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailsView.swift; sourceTree = "<group>"; };
+		D1F068702384646500FDC689 /* ProgramControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramControlsView.swift; sourceTree = "<group>"; };
+		D1F068722384651500FDC689 /* ProgramDotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDotView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,11 @@
 				D1F068532384521000FDC689 /* AppDelegate.swift */,
 				D1F068552384521000FDC689 /* SceneDelegate.swift */,
 				D1F0685A2384521000FDC689 /* ContentView.swift */,
+				D1F0686A238452B000FDC689 /* ProgramsView.swift */,
+				D1F0686C238455CC00FDC689 /* ProgramRow.swift */,
+				D1F0686E2384603600FDC689 /* ProgramDetailsView.swift */,
+				D1F068702384646500FDC689 /* ProgramControlsView.swift */,
+				D1F068722384651500FDC689 /* ProgramDotView.swift */,
 				D1F0685C2384521100FDC689 /* Assets.xcassets */,
 				D1F068612384521200FDC689 /* LaunchScreen.storyboard */,
 				D1F068642384521200FDC689 /* Info.plist */,
@@ -150,9 +165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1F068542384521000FDC689 /* AppDelegate.swift in Sources */,
+				D1F0686D238455CC00FDC689 /* ProgramRow.swift in Sources */,
 				D1F068592384521000FDC689 /* Medolight.xcdatamodeld in Sources */,
+				D1F068712384646500FDC689 /* ProgramControlsView.swift in Sources */,
 				D1F0685B2384521000FDC689 /* ContentView.swift in Sources */,
+				D1F0686B238452B000FDC689 /* ProgramsView.swift in Sources */,
+				D1F068732384651500FDC689 /* ProgramDotView.swift in Sources */,
 				D1F068562384521000FDC689 /* SceneDelegate.swift in Sources */,
+				D1F0686F2384603600FDC689 /* ProgramDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            ProgramsView()
+                .tabItem {
+                    Text("444")
+                    Image(systemName: "list.bullet")
+            }
+            Text("123")
+        }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
