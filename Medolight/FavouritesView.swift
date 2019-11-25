@@ -1,19 +1,20 @@
 //
-//  ProgramsView.swift
+//  FavouritesView.swift
 //  Medolight
 //
-//  Created by Евгений Соболь on 11/19/19.
+//  Created by Евгений Соболь on 11/25/19.
 //  Copyright © 2019 Esobol. All rights reserved.
 //
 
 import SwiftUI
 
-struct ProgramsView: View {
+struct FavouritesView: View {
 
     @Environment(\.managedObjectContext) var managedObjectContext
 
     @FetchRequest(entity: Program.entity(),
-                  sortDescriptors: []) var programs: FetchedResults<Program>
+                  sortDescriptors: [],
+                  predicate: NSPredicate(format: "isFavourite == YES")) var programs: FetchedResults<Program>
 
     var body: some View {
         NavigationView {
@@ -22,12 +23,12 @@ struct ProgramsView: View {
                     ProgramRow(program: program)
                 }
             }
-            .navigationBarTitle("Программы")
+            .navigationBarTitle("Избранное")
         }
     }
 }
 
-struct ProgramsView_Previews: PreviewProvider {
+struct FavouritesView_Previews: PreviewProvider {
     static var previews: some View {
         ProgramsView()
     }

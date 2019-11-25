@@ -16,7 +16,11 @@ struct ContentView: View {
                     Text("Проограммы")
                     Image(systemName: "list.bullet")
             }
-            Text("123")
+            FavouritesView()
+                .tabItem {
+                    Text("Избранное")
+                    Image(systemName: "star")
+            }
         }
         .edgesIgnoringSafeArea(.top)
     }
