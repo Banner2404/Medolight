@@ -21,15 +21,15 @@ public class DailySession: Session {
     override var string: String {
         let numberString: String
         if let to = to {
-            numberString = String(format: "%d - %d в день", from, to)
+            numberString = "\(from) - \(to) в день"
         } else {
-            numberString = String(format: "%d в день", from)
+            numberString = "\(from) в день"
         }
         let resultString: String
         if night {
-            resultString = String(format: "%@ (на ночь)", numberString)
+            resultString = "\(numberString) (на ночь)"
         } else {
-            resultString = String(format: "%@", numberString)
+            resultString = numberString
         }
         return resultString
     }

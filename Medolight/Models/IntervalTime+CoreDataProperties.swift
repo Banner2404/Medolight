@@ -17,7 +17,7 @@ extension IntervalTime {
         return NSFetchRequest<IntervalTime>(entityName: "IntervalTime")
     }
 
-    @NSManaged public var unit: String
+    @NSManaged public var unitString: String
     @NSManaged public var value64: Int64
     @NSManaged public var interval: Interval
 

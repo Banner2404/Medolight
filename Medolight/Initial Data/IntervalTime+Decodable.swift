@@ -22,7 +22,7 @@ extension IntervalTime {
             let context = AppDelegate.shared.database.persistentContainer.viewContext
             let intervalTime = IntervalTime(context: context)
             intervalTime.value = value
-            intervalTime.unit = unit
+            intervalTime.unitString = unit
             self.value = intervalTime
         }
 

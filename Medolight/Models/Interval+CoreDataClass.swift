@@ -18,7 +18,17 @@ public class Interval: NSManagedObject {
         return interval
     }
 
+    var from: IntervalTime {
+        (times as! Set<IntervalTime>).min()!
+    }
+
+    var to: IntervalTime? {
+        let max = (times as! Set<IntervalTime>).max()
+        return max != from ? max : nil
+    }
+
     var string: String {
-        "Time"
+        if everyday { return "Ежедневно" }
+        return "\(from.value) \(from.unit.rawValue)"
     }
 }

@@ -13,7 +13,7 @@
         <relationship name="times" toMany="YES" maxCount="2" deletionRule="Cascade" destinationEntity="IntervalTime" inverseName="interval" inverseEntity="IntervalTime"/>
     </entity>
     <entity name="IntervalTime" representedClassName="IntervalTime" syncable="YES">
-        <attribute name="unit" attributeType="String"/>
+        <attribute name="unitString" attributeType="String"/>
         <attribute name="value64" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="interval" maxCount="1" deletionRule="Cascade" destinationEntity="Interval" inverseName="times" inverseEntity="Interval"/>
     </entity>
