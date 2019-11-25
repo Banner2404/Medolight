@@ -18,13 +18,29 @@ public class DailySession: Session {
         return session
     }
 
+    override var string: String {
+        let numberString: String
+        if let to = to {
+            numberString = String(format: "%d - %d в день", from, to)
+        } else {
+            numberString = String(format: "%d в день", from)
+        }
+        let resultString: String
+        if night {
+            resultString = String(format: "%@ (на ночь)", numberString)
+        } else {
+            resultString = String(format: "%@", numberString)
+        }
+        return resultString
+    }
+
     var from: Int {
         get { Int(from64) }
         set { from64 = Int64(newValue) }
     }
 
     var to: Int? {
-        get { Int(to64) }
+        get { to64 > 0 ? Int(to64) : nil }
         set { to64 = Int64(newValue ?? 0) }
     }
 }

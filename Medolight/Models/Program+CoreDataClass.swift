@@ -14,8 +14,7 @@ import CoreData
 public class Program: NSManagedObject {
 
     static var demo: Program {
-        let program = Program()
-        return program
+        return try! AppDelegate.shared.database.persistentContainer.viewContext.fetch(fetchRequest()).first as! Self
     }
 
     var therapy: [Therapy] {

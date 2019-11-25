@@ -60,7 +60,7 @@ struct ProgramControlsView: View {
         }
         .padding()
         .padding(.top, 20)
-        .background(Color.blue.opacity(0.3))
+        .background(Color.blue.opacity(0.2))
         .cornerRadius(20)
     }
 

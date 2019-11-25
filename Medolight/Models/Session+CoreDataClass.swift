@@ -14,6 +14,6 @@ import CoreData
 public class Session: NSManagedObject {
 
     var string: String {
-        return "TODO"
+        return ""
     }
 }
