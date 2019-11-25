@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D18F6A11238590140042C032 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D18F6A10238590140042C032 /* data.json */; };
+		D1C51074238A8B4A00504EF4 /* Program+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51068238A8B4A00504EF4 /* Program+CoreDataClass.swift */; };
+		D1C51075238A8B4A00504EF4 /* Program+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51069238A8B4A00504EF4 /* Program+CoreDataProperties.swift */; };
+		D1C51076238A8B4A00504EF4 /* IntervalTime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5106A238A8B4A00504EF4 /* IntervalTime+CoreDataClass.swift */; };
+		D1C51077238A8B4A00504EF4 /* IntervalTime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5106B238A8B4A00504EF4 /* IntervalTime+CoreDataProperties.swift */; };
+		D1C51078238A8B4A00504EF4 /* Therapy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5106C238A8B4A00504EF4 /* Therapy+CoreDataClass.swift */; };
+		D1C51079238A8B4A00504EF4 /* Therapy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5106D238A8B4A00504EF4 /* Therapy+CoreDataProperties.swift */; };
+		D1C5107A238A8B4A00504EF4 /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5106E238A8B4A00504EF4 /* Session+CoreDataClass.swift */; };
+		D1C5107B238A8B4A00504EF4 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5106F238A8B4A00504EF4 /* Session+CoreDataProperties.swift */; };
+		D1C5107C238A8B4A00504EF4 /* DailySession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51070238A8B4A00504EF4 /* DailySession+CoreDataClass.swift */; };
+		D1C5107D238A8B4A00504EF4 /* DailySession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51071238A8B4A00504EF4 /* DailySession+CoreDataProperties.swift */; };
+		D1C5107E238A8B4A00504EF4 /* Interval+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51072238A8B4A00504EF4 /* Interval+CoreDataClass.swift */; };
+		D1C5107F238A8B4A00504EF4 /* Interval+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51073238A8B4A00504EF4 /* Interval+CoreDataProperties.swift */; };
+		D1C51082238A956500504EF4 /* IntervalTime+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51081238A956500504EF4 /* IntervalTime+Decodable.swift */; };
+		D1C51084238A993100504EF4 /* Interval+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51083238A993100504EF4 /* Interval+Decodable.swift */; };
+		D1C51086238A9AC700504EF4 /* DailySession+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51085238A9AC700504EF4 /* DailySession+Decodable.swift */; };
+		D1C51088238A9C0000504EF4 /* Therapy+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51087238A9C0000504EF4 /* Therapy+Decodable.swift */; };
+		D1C5108A238A9C8600504EF4 /* Program+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51089238A9C8600504EF4 /* Program+Decodable.swift */; };
+		D1CA2D6D238C52B400980E8E /* DataPreloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CA2D6C238C52B400980E8E /* DataPreloader.swift */; };
+		D1CA2D6F238C543E00980E8E /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CA2D6E238C543E00980E8E /* Database.swift */; };
 		D1F068542384521000FDC689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F068532384521000FDC689 /* AppDelegate.swift */; };
 		D1F068562384521000FDC689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F068552384521000FDC689 /* SceneDelegate.swift */; };
 		D1F068592384521000FDC689 /* Medolight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1F068572384521000FDC689 /* Medolight.xcdatamodeld */; };
@@ -22,6 +42,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D18F6A10238590140042C032 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		D1C51068238A8B4A00504EF4 /* Program+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Program+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D1C51069238A8B4A00504EF4 /* Program+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Program+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D1C5106A238A8B4A00504EF4 /* IntervalTime+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntervalTime+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D1C5106B238A8B4A00504EF4 /* IntervalTime+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntervalTime+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D1C5106C238A8B4A00504EF4 /* Therapy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Therapy+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D1C5106D238A8B4A00504EF4 /* Therapy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Therapy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D1C5106E238A8B4A00504EF4 /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D1C5106F238A8B4A00504EF4 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D1C51070238A8B4A00504EF4 /* DailySession+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailySession+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D1C51071238A8B4A00504EF4 /* DailySession+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailySession+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D1C51072238A8B4A00504EF4 /* Interval+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interval+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D1C51073238A8B4A00504EF4 /* Interval+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interval+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D1C51081238A956500504EF4 /* IntervalTime+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntervalTime+Decodable.swift"; sourceTree = "<group>"; };
+		D1C51083238A993100504EF4 /* Interval+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interval+Decodable.swift"; sourceTree = "<group>"; };
+		D1C51085238A9AC700504EF4 /* DailySession+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailySession+Decodable.swift"; sourceTree = "<group>"; };
+		D1C51087238A9C0000504EF4 /* Therapy+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Therapy+Decodable.swift"; sourceTree = "<group>"; };
+		D1C51089238A9C8600504EF4 /* Program+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Program+Decodable.swift"; sourceTree = "<group>"; };
+		D1CA2D6C238C52B400980E8E /* DataPreloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPreloader.swift; sourceTree = "<group>"; };
+		D1CA2D6E238C543E00980E8E /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		D1F068502384521000FDC689 /* Medolight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medolight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F068532384521000FDC689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1F068552384521000FDC689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +89,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1C51067238A889200504EF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1C51068238A8B4A00504EF4 /* Program+CoreDataClass.swift */,
+				D1C51069238A8B4A00504EF4 /* Program+CoreDataProperties.swift */,
+				D1C5106A238A8B4A00504EF4 /* IntervalTime+CoreDataClass.swift */,
+				D1C5106B238A8B4A00504EF4 /* IntervalTime+CoreDataProperties.swift */,
+				D1C5106C238A8B4A00504EF4 /* Therapy+CoreDataClass.swift */,
+				D1C5106D238A8B4A00504EF4 /* Therapy+CoreDataProperties.swift */,
+				D1C5106E238A8B4A00504EF4 /* Session+CoreDataClass.swift */,
+				D1C5106F238A8B4A00504EF4 /* Session+CoreDataProperties.swift */,
+				D1C51070238A8B4A00504EF4 /* DailySession+CoreDataClass.swift */,
+				D1C51071238A8B4A00504EF4 /* DailySession+CoreDataProperties.swift */,
+				D1C51072238A8B4A00504EF4 /* Interval+CoreDataClass.swift */,
+				D1C51073238A8B4A00504EF4 /* Interval+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1C51080238A94CA00504EF4 /* Initial Data */ = {
+			isa = PBXGroup;
+			children = (
+				D18F6A10238590140042C032 /* data.json */,
+				D1C51081238A956500504EF4 /* IntervalTime+Decodable.swift */,
+				D1C51083238A993100504EF4 /* Interval+Decodable.swift */,
+				D1C51085238A9AC700504EF4 /* DailySession+Decodable.swift */,
+				D1C51087238A9C0000504EF4 /* Therapy+Decodable.swift */,
+				D1C51089238A9C8600504EF4 /* Program+Decodable.swift */,
+				D1CA2D6C238C52B400980E8E /* DataPreloader.swift */,
+			);
+			path = "Initial Data";
+			sourceTree = "<group>";
+		};
 		D1F068472384521000FDC689 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +143,9 @@
 			children = (
 				D1F068532384521000FDC689 /* AppDelegate.swift */,
 				D1F068552384521000FDC689 /* SceneDelegate.swift */,
+				D1C51067238A889200504EF4 /* Models */,
+				D1C51080238A94CA00504EF4 /* Initial Data */,
+				D1CA2D6E238C543E00980E8E /* Database.swift */,
 				D1F0685A2384521000FDC689 /* ContentView.swift */,
 				D1F0686A238452B000FDC689 /* ProgramsView.swift */,
 				D1F0686C238455CC00FDC689 /* ProgramRow.swift */,
@@ -154,6 +230,7 @@
 				D1F068632384521200FDC689 /* LaunchScreen.storyboard in Resources */,
 				D1F068602384521100FDC689 /* Preview Assets.xcassets in Resources */,
 				D1F0685D2384521100FDC689 /* Assets.xcassets in Resources */,
+				D18F6A11238590140042C032 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,15 +241,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C5107F238A8B4A00504EF4 /* Interval+CoreDataProperties.swift in Sources */,
 				D1F068542384521000FDC689 /* AppDelegate.swift in Sources */,
 				D1F0686D238455CC00FDC689 /* ProgramRow.swift in Sources */,
+				D1C51084238A993100504EF4 /* Interval+Decodable.swift in Sources */,
+				D1C51086238A9AC700504EF4 /* DailySession+Decodable.swift in Sources */,
+				D1C51075238A8B4A00504EF4 /* Program+CoreDataProperties.swift in Sources */,
 				D1F068592384521000FDC689 /* Medolight.xcdatamodeld in Sources */,
+				D1C5107D238A8B4A00504EF4 /* DailySession+CoreDataProperties.swift in Sources */,
+				D1C5108A238A9C8600504EF4 /* Program+Decodable.swift in Sources */,
+				D1C51078238A8B4A00504EF4 /* Therapy+CoreDataClass.swift in Sources */,
 				D1F068712384646500FDC689 /* ProgramControlsView.swift in Sources */,
+				D1C5107C238A8B4A00504EF4 /* DailySession+CoreDataClass.swift in Sources */,
+				D1C5107A238A8B4A00504EF4 /* Session+CoreDataClass.swift in Sources */,
+				D1C51076238A8B4A00504EF4 /* IntervalTime+CoreDataClass.swift in Sources */,
 				D1F0685B2384521000FDC689 /* ContentView.swift in Sources */,
+				D1CA2D6D238C52B400980E8E /* DataPreloader.swift in Sources */,
 				D1F0686B238452B000FDC689 /* ProgramsView.swift in Sources */,
 				D1F068732384651500FDC689 /* ProgramDotView.swift in Sources */,
+				D1C51077238A8B4A00504EF4 /* IntervalTime+CoreDataProperties.swift in Sources */,
+				D1C51082238A956500504EF4 /* IntervalTime+Decodable.swift in Sources */,
+				D1C5107B238A8B4A00504EF4 /* Session+CoreDataProperties.swift in Sources */,
+				D1C5107E238A8B4A00504EF4 /* Interval+CoreDataClass.swift in Sources */,
+				D1C51088238A9C0000504EF4 /* Therapy+Decodable.swift in Sources */,
 				D1F068562384521000FDC689 /* SceneDelegate.swift in Sources */,
 				D1F0686F2384603600FDC689 /* ProgramDetailsView.swift in Sources */,
+				D1C51079238A8B4A00504EF4 /* Therapy+CoreDataProperties.swift in Sources */,
+				D1CA2D6F238C543E00980E8E /* Database.swift in Sources */,
+				D1C51074238A8B4A00504EF4 /* Program+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

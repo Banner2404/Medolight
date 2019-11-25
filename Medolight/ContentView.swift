@@ -13,7 +13,7 @@ struct ContentView: View {
         TabView {
             ProgramsView()
                 .tabItem {
-                    Text("444")
+                    Text("Проограммы")
                     Image(systemName: "list.bullet")
             }
             Text("123")

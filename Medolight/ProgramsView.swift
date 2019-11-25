@@ -7,22 +7,21 @@
 //
 
 import SwiftUI
-
-let data = [
-    Program(name: "Ослабленный иммунитет", mode: 1, time: 5, details: ""),
-    Program(name: "Предгриппозное состояние", mode: 1, time: 10, details: ""),
-    Program(name: "Состояние стресса", mode: 1, time: 10, details: ""),
-    Program(name: "Спортивные перегрузки", mode: 3, time: 5, details: ""),
-    Program(name: "Боль в области конечностей", mode: 3, time: 5, details: ""),
-    Program(name: "Головная боль", mode: 3, time: 5, details: ""),
-    Program(name: "Ишиас", mode: 5, time: 5, details: ""),
-]
-
+let url = Bundle.main.url(forResource: "data", withExtension: "json")!
+let data = try! Data(contentsOf: url)
+//let objects = try! JSONDecoder().decode([Program].self, from: data)
+let objects = [Program.demo]
 
 struct ProgramsView: View {
+
+    @Environment(\.managedObjectContext) var managedObjectContext
+
+    @FetchRequest(entity: Program.entity(),
+                  sortDescriptors: []) var programs: FetchedResults<Program>
+
     var body: some View {
         NavigationView {
-            List(data, id: \.name) { program in
+            List(programs, id: \.name) { program in
                 NavigationLink(destination: ProgramDetailsView(program: program)) {
                     ProgramRow(program: program)
                 }

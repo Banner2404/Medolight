@@ -31,14 +31,14 @@ struct ProgramControlsView: View {
                     .font(.headline)
 
                 Spacer()
-                Text("123")
+                Text(program.therapy.first?.session.string ?? "")
                     .font(.headline)
             }
             HStack {
                 Text("Длительность")
                     .font(.headline)
                 Spacer()
-                Text("123")
+                Text(program.therapy.first?.interval.string ?? "")
                     .font(.headline)
             }
             HStack {

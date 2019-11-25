@@ -1,0 +1,143 @@
+[
+    {
+        "name": "Ослабленный иммунитет",
+        "details": "Центр грудины, поясница, стопа",
+        "mode": 1,
+        "time": 1,
+        "therapy": [
+            {
+                "session": {
+                    "type": "daily",
+                    "from": 2,
+                    "night": false
+                },
+                "interval": {
+                    "from": {
+                        "value": 2,
+                        "unit": "month"
+                    },
+                    "to": {
+                        "value": 3,
+                        "unit": "month"
+                    },
+                    "systematically": true,
+                    "necessary": false,
+                    "everyday": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Предгриппозное состояние (профилактика гриппа)",
+        "details": "Центр грудины, переносица",
+        "mode": 1,
+        "time": 2,
+        "therapy": [
+            {
+                "session": {
+                    "type": "daily",
+                    "from": 2,
+                    "night": false
+                },
+                "interval": {
+                    "from": {
+                        "value": 2,
+                        "unit": "month"
+                    },
+                    "to": {
+                        "value": 3,
+                        "unit": "month"
+                    },
+                    "systematically": false,
+                    "necessary": false,
+                    "everyday": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Состояние стресса",
+        "details": "Межбровье, между 1-м и 2-м пальцами кисти справа и слева",
+        "mode": 1,
+        "time": 2,
+        "therapy": [
+            {
+                "session": {
+                    "type": "daily",
+                    "from": 1,
+                    "night": true
+                },
+                "interval": {
+                    "from": {
+                        "value": 5,
+                        "unit": "day"
+                    },
+                    "to": {
+                        "value": 10,
+                        "unit": "day"
+                    },
+                    "systematically": false,
+                    "necessary": true,
+                    "everyday": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Спортивные перегрузки",
+        "details": "Межбровье, между 1-м и 2-м пальцами кисти справа и слева, центр грудины, поясница, верхне-наружная часть голени (в сочетании с массажем, антиоксидантами)",
+        "mode": 3,
+        "time": 1,
+        "therapy": [
+            {
+                "session": {
+                    "type": "daily",
+                    "from": 2,
+                    "night": false
+                },
+                "interval": {
+                    "from": {
+                        "value": 3,
+                        "unit": "day"
+                    },
+                    "to": {
+                        "value": 5,
+                        "unit": "day"
+                    },
+                    "systematically": false,
+                    "necessary": false,
+                    "everyday": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Боль в области конечностей",
+        "details": "Верхне-наружная часть голени, между 1-м и 2-м пальцами кисти, внутренняя поверхность голени над лодыжкой",
+        "mode": 3,
+        "time": 1,
+        "therapy": [
+            {
+                "session": {
+                    "type": "daily",
+                    "from": 1,
+                    "to": 2,
+                    "night": false
+                },
+                "interval": {
+                    "from": {
+                        "value": 5,
+                        "unit": "day"
+                    },
+                    "to": {
+                        "value": 10,
+                        "unit": "day"
+                    },
+                    "systematically": false,
+                    "necessary": false,
+                    "everyday": false
+                }
+            }
+        ]
+    }
+]

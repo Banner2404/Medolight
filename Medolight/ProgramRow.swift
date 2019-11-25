@@ -8,18 +8,6 @@
 
 import SwiftUI
 
-struct Program {
-
-    let name: String
-    let mode: Int
-    let time: Int
-    let details: String
-
-    static var demo: Program {
-        return Program(name: "Спортивные перегрузки", mode: 4, time: 15, details: "Межбровье, между 1-м и 2-м пальцами кисти справа и слева, центр грудины, поясница, верхне-наружная часть голени (в сочетании с массажем, антиоксидантами)")
-    }
-}
-
 struct ProgramRow: View {
 
     let program: Program

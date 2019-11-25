@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DailySession" representedClassName="DailySession" parentEntity="Session" syncable="YES">
+        <attribute name="from64" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="night" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="to64" optional="YES" attributeType="Integer 64" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Interval" representedClassName="Interval" syncable="YES">
+        <attribute name="everyday" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="necessary" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="systematically" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="therapy" maxCount="1" deletionRule="Cascade" destinationEntity="Therapy" inverseName="interval" inverseEntity="Therapy"/>
+        <relationship name="times" toMany="YES" maxCount="2" deletionRule="Cascade" destinationEntity="IntervalTime" inverseName="interval" inverseEntity="IntervalTime"/>
+    </entity>
+    <entity name="IntervalTime" representedClassName="IntervalTime" syncable="YES">
+        <attribute name="unit" attributeType="String"/>
+        <attribute name="value64" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="interval" maxCount="1" deletionRule="Cascade" destinationEntity="Interval" inverseName="times" inverseEntity="Interval"/>
+    </entity>
+    <entity name="Program" representedClassName="Program" syncable="YES">
+        <attribute name="details" attributeType="String"/>
+        <attribute name="mode64" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="time64" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <relationship name="therapySet" toMany="YES" deletionRule="Cascade" destinationEntity="Therapy" inverseName="program" inverseEntity="Therapy"/>
+    </entity>
+    <entity name="Session" representedClassName="Session" isAbstract="YES" syncable="YES">
+        <relationship name="therapy" maxCount="1" deletionRule="Cascade" destinationEntity="Therapy" inverseName="session" inverseEntity="Therapy"/>
+    </entity>
+    <entity name="Therapy" representedClassName="Therapy" syncable="YES">
+        <relationship name="interval" maxCount="1" deletionRule="Cascade" destinationEntity="Interval" inverseName="therapy" inverseEntity="Interval"/>
+        <relationship name="program" maxCount="1" deletionRule="Cascade" destinationEntity="Program" inverseName="therapySet" inverseEntity="Program"/>
+        <relationship name="session" maxCount="1" deletionRule="Cascade" destinationEntity="Session" inverseName="therapy" inverseEntity="Session"/>
+    </entity>
+    <elements>
+        <element name="DailySession" positionX="240.83984375" positionY="14.609375" width="128" height="88"/>
+        <element name="Interval" positionX="-18" positionY="45" width="128" height="118"/>
+        <element name="IntervalTime" positionX="-90" positionY="54" width="128" height="88"/>
+        <element name="Program" positionX="-333.33203125" positionY="-40.48828125" width="128" height="118"/>
+        <element name="Session" positionX="66.37890625" positionY="36.15234375" width="128" height="58"/>
+        <element name="Therapy" positionX="-124.17578125" positionY="40.33984375" width="128" height="88"/>
+    </elements>
 </model>
