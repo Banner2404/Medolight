@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ProgramControlsView: View {
 
-    let program: Program
+    @ObservedObject var program: Program
 
     var body: some View {
         VStack(spacing: 15) {
@@ -50,8 +50,8 @@ struct ProgramControlsView: View {
                         .cornerRadius(10)
                 }
                 Spacer()
-                Button(action: {}) {
-                    Image(systemName: "heart.fill")
+                Button(action: toggleFavourite) {
+                    Image(systemName: program.isFavourite ? "heart.fill" : "heart")
                         .font(.system(size: 40))
                         .foregroundColor(.red)
                 }
@@ -62,6 +62,11 @@ struct ProgramControlsView: View {
         .padding(.top, 20)
         .background(Color.blue.opacity(0.3))
         .cornerRadius(20)
+    }
+
+    func toggleFavourite() {
+        program.isFavourite.toggle()
+        AppDelegate.shared.database.saveContext()
     }
 }
 

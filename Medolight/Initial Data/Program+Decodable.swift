@@ -24,6 +24,7 @@ extension Program {
 
             let context = AppDelegate.shared.database.persistentContainer.viewContext
             let value = Program(context: context)
+            value.isFavourite = false
             value.name = name
             value.details = details
             value.mode = mode

@@ -17,6 +17,7 @@ extension Program {
         return NSFetchRequest<Program>(entityName: "Program")
     }
 
+    @NSManaged public var isFavourite: Bool
     @NSManaged public var name: String
     @NSManaged public var details: String
     @NSManaged public var mode64: Int64

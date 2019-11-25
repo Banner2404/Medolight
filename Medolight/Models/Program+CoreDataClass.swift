@@ -32,4 +32,9 @@ public class Program: NSManagedObject {
         get { Int(time64) }
         set { time64 = Int64(newValue) }
     }
+
+    public override func willChangeValue(forKey key: String) {
+        super.willChangeValue(forKey: key)
+        objectWillChange.send()
+    }
 }

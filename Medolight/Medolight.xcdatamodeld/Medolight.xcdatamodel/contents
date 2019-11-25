@@ -19,6 +19,7 @@
     </entity>
     <entity name="Program" representedClassName="Program" syncable="YES">
         <attribute name="details" attributeType="String"/>
+        <attribute name="isFavourite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="mode64" attributeType="Integer 64" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="time64" attributeType="Integer 64" usesScalarValueType="YES"/>
@@ -36,7 +37,7 @@
         <element name="DailySession" positionX="240.83984375" positionY="14.609375" width="128" height="88"/>
         <element name="Interval" positionX="-18" positionY="45" width="128" height="118"/>
         <element name="IntervalTime" positionX="-90" positionY="54" width="128" height="88"/>
-        <element name="Program" positionX="-333.33203125" positionY="-40.48828125" width="128" height="118"/>
+        <element name="Program" positionX="-333.33203125" positionY="-40.48828125" width="128" height="133"/>
         <element name="Session" positionX="66.37890625" positionY="36.15234375" width="128" height="58"/>
         <element name="Therapy" positionX="-124.17578125" positionY="40.33984375" width="128" height="88"/>
     </elements>
