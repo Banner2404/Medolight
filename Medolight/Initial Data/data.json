@@ -139,5 +139,77 @@
                 }
             }
         ]
+    },
+    {
+        "name": "Воспаление суставов, остеоартроз",
+        "details": "Зона сустава",
+        "mode": 3,
+        "time": 2,
+        "therapy": [
+            {
+                "session": {
+                    "type": "daily",
+                    "from": 2,
+                    "night": false
+                },
+                "interval": {
+                    "from": {
+                        "value": 21,
+                        "unit": "day"
+                    },
+                    "to": {
+                        "value": 2,
+                        "unit": "month"
+                    },
+                    "systematically": false,
+                    "necessary": false,
+                    "everyday": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Почечная колика",
+        "details": "Уровень 2 – 3 поясничных позвонков (проекция почки), подошва правой и левой стопы (в сочетании со спазмолитиками, горячей ванной)",
+        "mode": 5,
+        "time": 1,
+        "therapy": [
+            {
+                "session": {
+                    "type": "daily",
+                    "from": 2,
+                    "night": false
+                },
+                "interval": {
+                    "systematically": false,
+                    "necessary": false,
+                    "everyday": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "Хронический гингивит в стадии обострения",
+        "details": "Зона поражения наружно и на десну в сочетании с антисептической обработкой",
+        "mode": 5,
+        "time": 2,
+        "therapy": [
+            {
+                "session": {
+                    "type": "daily",
+                    "from": 2,
+                    "night": false
+                },
+                "interval": {
+                    "from": {
+                        "value": 7,
+                        "unit": "day"
+                    },
+                    "systematically": false,
+                    "necessary": false,
+                    "everyday": false
+                }
+            }
+        ]
     }
 ]

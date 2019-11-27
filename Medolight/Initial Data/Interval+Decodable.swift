@@ -16,15 +16,15 @@ extension Interval {
 
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
-            let from = try container.decode(IntervalTime.Wrapper.self, forKey: .from)
-            let to = try container.decode(IntervalTime.Wrapper.self, forKey: .to)
+            let from = try? container.decode(IntervalTime.Wrapper.self, forKey: .from)
+            let to = try? container.decode(IntervalTime.Wrapper.self, forKey: .to)
             let systematically = try container.decode(Bool.self, forKey: .systematically)
             let necessary = try container.decode(Bool.self, forKey: .necessary)
             let everyday = try container.decode(Bool.self, forKey: .everyday)
 
             let context = AppDelegate.shared.database.persistentContainer.viewContext
             let value = Interval(context: context)
-            value.addToTimes([from.value, to.value])
+            value.addToTimes(NSSet(array: [from?.value, to?.value].compactMap { $0 }))
             value.systematically = systematically
             value.necessary = necessary
             value.everyday = everyday

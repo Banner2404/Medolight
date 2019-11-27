@@ -41,6 +41,15 @@ public class IntervalTime: NSManagedObject, Comparable {
             }
         }
 
+        var string: String {
+            switch self {
+            case .day:
+                return "дней"
+            case .month:
+                return "месяца"
+            }
+        }
+
         public static func < (lhs: Unit, rhs: Unit) -> Bool {
             return lhs.sortIndex < rhs.sortIndex
         }

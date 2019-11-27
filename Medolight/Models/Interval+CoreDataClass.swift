@@ -18,8 +18,8 @@ public class Interval: NSManagedObject {
         return interval
     }
 
-    var from: IntervalTime {
-        (times as! Set<IntervalTime>).min()!
+    var from: IntervalTime? {
+        (times as! Set<IntervalTime>).min()
     }
 
     var to: IntervalTime? {
@@ -29,6 +29,31 @@ public class Interval: NSManagedObject {
 
     var string: String {
         if everyday { return "Ежедневно" }
-        return "\(from.value) \(from.unit.rawValue)"
+        let intervalString: String
+        if let from = from {
+            if let to = to {
+                if from.unit == to.unit {
+                    intervalString = "\(from.value) - \(to.value) \(to.unit.string)"
+                } else {
+                    intervalString = "\(from.value) \(from.unit.string) - \(to.value) \(to.unit.string)"
+                }
+            } else {
+                intervalString = "\(from.value) \(from.unit.string)"
+            }
+        } else {
+            intervalString = "При необходимости"
+        }
+        let notesString: String
+        switch (systematically, necessary) {
+        case (true, true):
+            notesString = "\(intervalString) (систематически и при необходимости)"
+        case (true, false):
+            notesString = "\(intervalString) (систематически)"
+        case (false, true):
+            notesString = "\(intervalString) (и при необходимости)"
+        case (false, false):
+            notesString = "\(intervalString)"
+        }
+        return notesString
     }
 }
