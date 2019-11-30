@@ -32,6 +32,10 @@ public class Program: NSManagedObject {
         set { time64 = Int64(newValue) }
     }
 
+    var timeInMinutes: Int {
+        return time * 5
+    }
+
     public override func willChangeValue(forKey key: String) {
         super.willChangeValue(forKey: key)
         objectWillChange.send()

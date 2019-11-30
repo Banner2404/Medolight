@@ -17,7 +17,7 @@ struct ProgramRow: View {
             Text(program.name)
                 .font(.body)
             Spacer()
-            Text("\(program.time) мин")
+            Text("\(program.timeInMinutes) мин")
                 .foregroundColor(.blue)
                 .padding(5)
                 .overlay(

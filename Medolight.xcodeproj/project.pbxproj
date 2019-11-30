@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D159CEC62392864D00DA34A8 /* RoundedTopShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D159CEC52392864D00DA34A8 /* RoundedTopShape.swift */; };
 		D18F6A11238590140042C032 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D18F6A10238590140042C032 /* data.json */; };
 		D1C51074238A8B4A00504EF4 /* Program+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51068238A8B4A00504EF4 /* Program+CoreDataClass.swift */; };
 		D1C51075238A8B4A00504EF4 /* Program+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C51069238A8B4A00504EF4 /* Program+CoreDataProperties.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D159CEC52392864D00DA34A8 /* RoundedTopShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTopShape.swift; sourceTree = "<group>"; };
 		D18F6A10238590140042C032 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		D1C51068238A8B4A00504EF4 /* Program+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Program+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D1C51069238A8B4A00504EF4 /* Program+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Program+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				D1F0686E2384603600FDC689 /* ProgramDetailsView.swift */,
 				D1F068702384646500FDC689 /* ProgramControlsView.swift */,
 				D1F068722384651500FDC689 /* ProgramDotView.swift */,
+				D159CEC52392864D00DA34A8 /* RoundedTopShape.swift */,
 				D1F0685C2384521100FDC689 /* Assets.xcassets */,
 				D1F068612384521200FDC689 /* LaunchScreen.storyboard */,
 				D1F068642384521200FDC689 /* Info.plist */,
@@ -265,6 +268,7 @@
 				D1C51077238A8B4A00504EF4 /* IntervalTime+CoreDataProperties.swift in Sources */,
 				D1CA2D71238C5CB500980E8E /* FavouritesView.swift in Sources */,
 				D1C51082238A956500504EF4 /* IntervalTime+Decodable.swift in Sources */,
+				D159CEC62392864D00DA34A8 /* RoundedTopShape.swift in Sources */,
 				D1C5107B238A8B4A00504EF4 /* Session+CoreDataProperties.swift in Sources */,
 				D1C5107E238A8B4A00504EF4 /* Interval+CoreDataClass.swift in Sources */,
 				D1C51088238A9C0000504EF4 /* Therapy+Decodable.swift in Sources */,

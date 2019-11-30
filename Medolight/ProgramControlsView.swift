@@ -60,8 +60,7 @@ struct ProgramControlsView: View {
         }
         .padding()
         .padding(.top, 20)
-        .background(Color.blue.opacity(0.2))
-        .cornerRadius(20)
+        .background(RoundedTopShape(radius: 20).fill(Color.blue.opacity(0.2)))
     }
 
     func toggleFavourite() {
