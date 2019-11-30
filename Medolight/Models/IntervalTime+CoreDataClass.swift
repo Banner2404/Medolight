@@ -13,6 +13,10 @@ import CoreData
 @objc(IntervalTime)
 public class IntervalTime: NSManagedObject, Comparable {
 
+    static var demo: IntervalTime {
+        return try! AppDelegate.shared.database.persistentContainer.viewContext.fetch(fetchRequest()).first as! Self
+    }
+
     var value: Int {
         get { Int(value64) }
         set { value64 = Int64(newValue) }
@@ -23,9 +27,18 @@ public class IntervalTime: NSManagedObject, Comparable {
         set { unitString = newValue.rawValue }
     }
 
+    var string: String {
+        return "\(value) \(unit.string)"
+    }
+
     public static func < (lhs: IntervalTime, rhs: IntervalTime) -> Bool {
         if lhs.unit != rhs.unit { return lhs.unit < rhs.unit }
         return lhs.value < rhs.value
+    }
+
+    public override func willChangeValue(forKey key: String) {
+        super.willChangeValue(forKey: key)
+        objectWillChange.send()
     }
 
     enum Unit: String, Comparable {

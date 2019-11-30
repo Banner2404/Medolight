@@ -20,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         preloader.preload()
+//        let course = Course(context: database.persistentContainer.viewContext)
+//        course.program = try! database.persistentContainer.viewContext.fetch(Program.fetchRequest()).first as! Program
+//        course.duration = IntervalTime(context: database.persistentContainer.viewContext)
+//        course.duration.value = 2
+//        course.duration.unit = .day
+//        course.startDate = Date()
+//        database.saveContext()
         return true
     }
 

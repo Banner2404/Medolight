@@ -42,7 +42,7 @@ struct ProgramControlsView: View {
                     .font(.headline)
             }
             HStack {
-                Button(action: {}) {
+                NavigationLink(destination: CourseView(course: .demo)) {
                     Text("Начать лечение")
                         .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
                         .background(Color.blue)
